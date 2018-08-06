@@ -1,1 +1,15 @@
+<html>
+  <head>
+    <title>IP</title>
+  </head>
+  <body>
+    <h1>Online IP: <span id="onlineip"></span></h1>
+  </body>
+  <script>
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "https://l2.io/ip.js?var=userip", false);
+    xhttp.send();
+    document.getElementById("onlineip").innerHTML = xhttp.responseText;
 
+  </script>
+</html>
