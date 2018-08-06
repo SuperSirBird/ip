@@ -7,7 +7,7 @@
   </body>
   <script>
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "https://l2.io/ip.js?var=userip", false);
+    xhttp.open("GET", "https://cors-anywhere.herokuapp.com/https://l2.io/ip.js?var=userip", false);
     xhttp.send();
     document.getElementById("onlineip").innerHTML = xhttp.responseText;
 
